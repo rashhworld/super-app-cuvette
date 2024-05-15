@@ -44,8 +44,8 @@ function Timer() {
                     }}
                 </CountdownCircleTimer>
             </div>
-            <div className="flex flex-col gap-flex">
-                <div className="flex gap-flex items-center">
+            <div className="flex flex-col gap-7">
+                <div className="flex items-center gap-7">
                     <TimeUnit unit="hours" value={hours} isPlaying={isPlaying} incrementTime={incrementTime} decrementTime={decrementTime} />
                     <p className="text-white text-3xl mt-10">:</p>
                     <TimeUnit unit="minutes" value={minutes} isPlaying={isPlaying} incrementTime={incrementTime} decrementTime={decrementTime} />
