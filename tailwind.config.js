@@ -5,11 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      gap: {
-        'flex': '2rem', // Adjust the gap size as needed
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
