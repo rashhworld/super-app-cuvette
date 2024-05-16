@@ -5,11 +5,11 @@ function UserInfo() {
     const genreData = JSON.parse(localStorage.getItem('genreData'));
 
     return (
-        <div className="bg-[#5746EA] flex items-center rounded-2xl p-5">
-            <div>
+        <div className="bg-[#5746EA] flex items-center gap-5 rounded-2xl p-5">
+            <div className="hidden sm:block">
                 <img src="/images/profile/user.large.png" alt="" />
             </div>
-            <div className="text-white ms-5">
+            <div className="text-white">
                 <div>
                     {user ? (
                         <div>
