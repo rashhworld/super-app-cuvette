@@ -26,7 +26,7 @@ function News() {
             {news ? (
                 <div>
                     <div className="relative">
-                        <button className="absolute top-0 right-0 bg-black border border-white text-white py-2 px-4 rounded-lg m-2" onClick={() => fetchNews()}>↻</button>
+                        <button className="text-3xl absolute top-0 right-0 rounded-lg m-2" onClick={() => fetchNews()}>🔄</button>
                         <img src={news.thread.main_image} alt="News Image" className="block w-full h-auto" />
                         <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white p-4">
                             <p className="font-medium text-lg text-white mb-3" dangerouslySetInnerHTML={{ __html: news.highlightThreadTitle }}></p>
