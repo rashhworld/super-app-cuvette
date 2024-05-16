@@ -67,7 +67,7 @@ function BrowseMovies() {
         <div className="bg-black min-h-screen">
             <div className="container mx-auto p-4 md:p-0">
                 <div className="flex justify-between pt-5">
-                    <img src="/images/logo.png" style={{ height: "40px" }} alt="" />
+                    <Link to="/movies/genre"><img src="/images/logo.png" style={{ height: "40px" }} alt="" /></Link>
                     <Link to="/user/dashboard"><img src="/images/profile/user.small.png" style={{ height: "40px" }} alt="" /></Link>
                 </div>
                 <div className="flex flex-col gap-5 py-5">
@@ -76,12 +76,12 @@ function BrowseMovies() {
                         movies.map((name, gkey) => (
                             <div key={gkey}>
                                 <p className="text-[#878787] text-xl font-medium my-5">{name.genre}</p>
-                                <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                                     {name.movies && name.movies.length > 0 ? (
                                         name.movies.slice(0, 4).map((movie, mkey) => (
                                             <div key={mkey}>
                                                 <img src={movie.poster_path} alt="" />
-                                                <p className="text-white text-lg mt-3" key={mkey}>{movie.original_title}</p>
+                                                <p className="text-white text-lg my-4" key={mkey}>{movie.original_title}</p>
                                             </div>
                                         ))
                                     ) : (

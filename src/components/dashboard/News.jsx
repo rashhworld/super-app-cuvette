@@ -32,7 +32,7 @@ function News() {
                             <p>{moment(news.published).format('M-DD-YYYY | hh:mm A')}</p>
                         </div>
                     </div>
-                    <button class="block mx-auto text-green-500 border border-green-500 px-3 mt-3" onClick={() => fetchNews()}>Refresh News</button>
+                    <button className="block mx-auto text-green-500 border border-green-500 px-3 mt-3" onClick={() => fetchNews()}>Refresh News</button>
                     <div className="text-lg p-5" dangerouslySetInnerHTML={{ __html: news.highlightText }}></div>
                 </div>
             ) : (
