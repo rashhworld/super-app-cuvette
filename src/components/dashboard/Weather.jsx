@@ -44,8 +44,8 @@ function Weather() {
                 <span className="text-2xl font-medium">{moment(getLocation.datetime).format('hh:mm A')}</span>
             </div>
             <div className="p-5">
-                <div className="flex justify-between items-center">
-                    <div className="bg">
+                <div className="flex justify-between items-center gap-3">
+                    <div className="">
                         <img src="/images/icons/rain.png" alt="" />
                         <p>Heavy Rain</p>
                     </div>
