@@ -26,13 +26,13 @@ function News() {
             {news ? (
                 <div>
                     <div className="relative">
-                        <button className="text-3xl absolute top-0 right-0 rounded-lg m-2" onClick={() => fetchNews()}>🔄</button>
                         <img src={news.thread.main_image} alt="News Image" className="block w-full h-auto" />
                         <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white p-4">
                             <p className="font-medium text-lg text-white mb-3" dangerouslySetInnerHTML={{ __html: news.highlightThreadTitle }}></p>
                             <p>{moment(news.published).format('M-DD-YYYY | hh:mm A')}</p>
                         </div>
                     </div>
+                    <button class="block mx-auto text-green-500 border border-green-500 px-3 mt-3" onClick={() => fetchNews()}>Refresh News</button>
                     <div className="text-lg p-5" dangerouslySetInnerHTML={{ __html: news.highlightText }}></div>
                 </div>
             ) : (
